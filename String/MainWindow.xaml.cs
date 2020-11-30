@@ -28,7 +28,7 @@ namespace String
             try
             {
                 char[] array = new char[] {'а','б','в','г','д','е','ё','ж','з','и','й','к','л','м','н','о','п','р','с','т',
-                                           'у','ф','х','ц','ч','ш','щ','ь','ы','ъ','э','ю','я',' '};
+                                           'у','ф','х','ц','ч','ш','щ','ь','ы','ъ','э','ю','я',' ',' '};
                 string count = countBox.Text.ToString().ToLower();
                 string result = "";
                 for (int i = 0; i < count.Length; i++)

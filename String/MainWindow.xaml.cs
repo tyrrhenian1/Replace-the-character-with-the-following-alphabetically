@@ -33,8 +33,13 @@ namespace String
                 string result = "";
                 for (int i = 0; i < count.Length; i++)
                 {
-                    result += array[Array.IndexOf(array, count[i]) + 1];
+                    if (Array.IndexOf(array, count[i]) >= 0)
+                    {
+                        result += array[Array.IndexOf(array, count[i]) + 1];
+                    }
+                    else continue;
                 }
+                if (result.Length == 0) result = "Символы нельзя перевести";
                 resultBox.Text += $"Изначальная: {count} Переведенная: {result}" + Environment.NewLine;
                 countBox.Text = "";
             }

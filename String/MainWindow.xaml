@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:String"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="335.388" Width="241.421">
     <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="27,10,0,0" VerticalAlignment="Top" Width="155"/>
-        <TextBox x:Name="countBox" HorizontalAlignment="Left" Height="23" Margin="27,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
-        <Button Content="Рассчитать" HorizontalAlignment="Left" Margin="27,97,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Очистить" HorizontalAlignment="Left" Margin="107,97,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <TextBlock x:Name="resultBox" HorizontalAlignment="Left" Margin="27,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="145" Width="155"/>
+        <Label Content="Введите строку" HorizontalAlignment="Left" Margin="61,10,0,0" VerticalAlignment="Top" Width="97"/>
+        <TextBox x:Name="countBox" HorizontalAlignment="Left" Height="23" Margin="36,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
+        <Button Content="Рассчитать" HorizontalAlignment="Left" Margin="36,97,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="116,97,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <TextBlock x:Name="resultBox" HorizontalAlignment="Left" Margin="36,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="145" Width="155"/>
 
     </Grid>
 </Window>

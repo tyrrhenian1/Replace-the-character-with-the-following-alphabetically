@@ -27,16 +27,23 @@ namespace String
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            char[] array = new char[] {'а','б','в','г','д','е','ё','ж','з','и','й','к','л','м','н','о','п','р','с','т',
-                                       'у','ф','х','ц','ч','ш','щ','ь','ы','ъ','э','ю','я',' '};
-            string count = countBox.Text.ToString();
-            string result = "";
-            for (int i = 0; i < count.Length; i++)
+            try
             {
-                result += array[Array.IndexOf(array, count[i]) + 1];
+                char[] array = new char[] {'а','б','в','г','д','е','ё','ж','з','и','й','к','л','м','н','о','п','р','с','т',
+                                       'у','ф','х','ц','ч','ш','щ','ь','ы','ъ','э','ю','я',' '};
+                string count = countBox.Text.ToString().ToLower();
+                string result = "";
+                for (int i = 0; i < count.Length; i++)
+                {
+                    result += array[Array.IndexOf(array, count[i]) + 1];
+                }
+                resultBox.Text += $"Изначальная: {count} Переведенная: {result}" + Environment.NewLine;
+                countBox.Text = "";
             }
-            resultBox.Text += $"Изначальная: {count} Переведенная: {result}" + Environment.NewLine;
-            countBox.Text = "";
+            catch(Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

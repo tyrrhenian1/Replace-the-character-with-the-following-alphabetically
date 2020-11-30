@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:String"
         mc:Ignorable="d"
-        Title="MainWindow" Height="335.388" Width="241.421">
+        Title="Строковый тип данных" Height="335.388" Width="241.421">
     <Grid>
         <Label Content="Введите строку" HorizontalAlignment="Left" Margin="61,10,0,0" VerticalAlignment="Top" Width="97"/>
         <TextBox x:Name="countBox" HorizontalAlignment="Left" Height="23" Margin="36,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
